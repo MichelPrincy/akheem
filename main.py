@@ -55,7 +55,7 @@ APP_CHOOSER = {
 PAUSE_VIDEO = "500 847"
 LIKE_BUTTON = "1333 1799"
 FOLLOW_BUTTON = "350 1010"
-SWIPE_REFRESH = "1100 1900 1100 1266 1100"
+SWIPE_REFRESH = "1100 700 1100 1256 1100"
 
 # ================== TELEGRAM ==================
 load_dotenv()
@@ -376,7 +376,7 @@ class TikTokTaskBot:
 ██║  ██║██║  ██╗██║  ██║███████╗███████╗██║ ╚═╝ ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝     ╚═╝{RESET}
 {DIM}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}
-{WHITE}🤖 BOT AUTOMATION V3.2.2 {DIM}|{RESET} {CYAN}BY MICH{RESET}
+{WHITE}🤖 BOT AUTOMATION V3.2.3 {DIM}|{RESET} {CYAN}BY MICH{RESET}
 {DIM}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}
  📱 Status ADB    : {adb_status}
  👥 Comptes        : {WHITE}{acc_count}{RESET}
