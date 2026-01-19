@@ -35,27 +35,27 @@ GAIN_FOLLOW = 3.0
 
 # ================== COORDONNÉES ==================
 APP_CHOOSER = {
-    1: "70 625",
-    2: "168 625",
-    3: "271 625",
-    4: "371 625",
-    5: "471 625",
-    6: "70 725",
-    7: "168 725",
-    8: "271 725",
-    9: "371 725",
-    10: "471 725",
-    11: "70 825",
-    12: "168 825",
-    13: "271 825",
-    14: "371 825",
-    15: "471 825",
+    1: "190 2180",
+    2: "460 2180",
+    3: "720 2180",
+    4: "980 2180",
+    5: "1250 2180",
+    6: "190 725",
+    7: "460 725",
+    8: "720 725",
+    9: "980 725",
+    10: "1250 725",
+    11: "190 825",
+    12: "460 825",
+    13: "720 825",
+    14: "980 825",
+    15: "1250 825",
 }
 
 PAUSE_VIDEO = "500 847"
 LIKE_BUTTON = "1333 1799"
 FOLLOW_BUTTON = "350 1010"
-SWIPE_REFRESH = "1100 700 1100 1266 1100"
+SWIPE_REFRESH = "1100 1900 1100 1266 1100"
 
 # ================== TELEGRAM ==================
 load_dotenv()
@@ -175,7 +175,7 @@ class TikTokTaskBot:
     async def do_task(self, account_idx, link, action):
         try:
             self.cleanup_apps()
-            coord_clone = APP_CHOOSER.get(account_idx, "100 625")
+            coord_clone = APP_CHOOSER.get(account_idx, "100 2180")
             
             # 1. Ouverture & Attente
             os.system(f'{self.adb} am start -a android.intent.action.VIEW -d "{link}" -p com.waxmoon.ma.gp > /dev/null 2>&1')
@@ -376,7 +376,7 @@ class TikTokTaskBot:
 ██║  ██║██║  ██╗██║  ██║███████╗███████╗██║ ╚═╝ ██║
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝╚══════╝╚═╝     ╚═╝{RESET}
 {DIM}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}
-{WHITE}🤖 BOT AUTOMATION V3.2.1 {DIM}|{RESET} {CYAN}BY MICH{RESET}
+{WHITE}🤖 BOT AUTOMATION V3.2.2 {DIM}|{RESET} {CYAN}BY MICH{RESET}
 {DIM}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━{RESET}
  📱 Status ADB    : {adb_status}
  👥 Comptes        : {WHITE}{acc_count}{RESET}
